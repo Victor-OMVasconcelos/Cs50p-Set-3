@@ -21,15 +21,15 @@ while True:
 print(f"x is {x}")
 """
 def main():
-   x = get_int()
+   x = get_int("What's x?")
    print(f"x is {x}")
 
 
 
-def get_int():
+def get_int(prompt):
     while True:
       try:
-        return int(input("Whats x ? "))
+        return int(input(prompt))
       except ValueError:
         pass
         #pass ignores the input if its a value error
